@@ -39,7 +39,7 @@
 .newbies::before {
   position: absolute;
   content: "";
-  background-image: url(../../img/newbies/rectangle.png);
+  background-image: url(../img/newbies/rectangle.png);
   background-repeat: no-repeat;
   background-size: cover;
  
@@ -85,14 +85,14 @@
   z-index: 9;
   bottom: 0;
   left: 0;
-  background-image: url(../../img/newbies/star.svg);
+  background-image: url(../img/newbies/star.svg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 80px;
   height: 80px; 
 
   @include tablet-666 {
-    background-image: url(../../img/newbies/star-666.svg);
+    background-image: url(../img/newbies/star-666.svg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 50px;
