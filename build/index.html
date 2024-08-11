@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Modimal</title>
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__row">
+					<div class="logo">
+						<img src="./img/header/logo.svg" alt="" />
+					</div>
+					<div class="header__right">
+						<nav class="header__nav nav">
+							<ul class="nav__list">
+								<li class="nav__item">
+									<a href="#!" class="active">Репродукции</a>
+								</li>
+								<li class="nav__item"><a href="#!">Новинки</a></li>
+								<li class="nav__item"><a href="#!">О&#160;нас</a></li>
+							</ul>
+						</nav>
+						<button class="mobile-nav-btn">
+							<div class="nav-icon"></div>
+						</button>
+						<a href="#!" class="basket">
+							<svg class="icon icon--basket">
+								<use href="./img/svgsprite/sprite.symbol.svg#basket"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="mobile-nav">
+			<ul class="mobile-nav__list">
+				<li><a href="#!">Репродукции</a></li>
+				<li><a href="#!">Новинки</a></li>
+				<li><a href="#!">О&#160;нас</a></li>
+			</ul>
+		</div>
+
+		<main class="docs">
+			<section class="hero">
+				<div class="container">
+					<div class="hero__row">
+						<div class="hero__img">
+							<picture>
+								<source srcset="./img/hero/hero-img.webp 1x, ./img/hero/hero-img@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/hero/hero-img.png 1x, ./img/hero/hero-img@2x.png 2x" type="image/png" />
+								<img src="./img/hero/hero-img.png" alt="" />
+							</picture>
+						</div>
+						<div class="hero__content">
+							<h2 class="hero__title">Реплики картин от&#160;<span>Ink. House</span></h2>
+							<div class="hero__text">
+								<p>
+									Высокое качество отрисовки на&#160;плотной бумаге или льняном холсте. Редкие произведения, доступные цены.
+								</p>
+							</div>
+							<a href="#!" class="btn btn btn--small">Продукция</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="catalog">
+				<div class="container">
+					<div class="catalog__wrapper">
+						<div class="catalog__top">
+							<h2 class="catalog__title title">Репродукции</h2>
+							<div class="tabse__nav">
+								<button type="button" class="tabs active" data-id="0">
+									Франция
+								</button>
+								<button type="button" class="tabs" data-id="1">
+									Германия
+								</button>
+								<button type="button" class="tabs" data-id="2">Англия</button>
+							</div>
+						</div>
+						<div class="tabs__container">
+							<div class="cards active" id="0">
+								<article class="card">
+									<div class="card__picture">
+										<picture>
+											<source srcset="./img/catalog/card/01.webp 1x, ./img/catalog/card/01@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/catalog/card/01.jpg 1x, ./img/catalog/card/01@2x.jpg 2x" type="image/jpeg" />
+											<img src="./img/catalog/card/01.jpg" alt="" />
+										</picture>
+									</div>
+
+									<div class="card__content">
+										<span class="card__author">Марсель Руссо</span>
+										<h3 class="card__title">Охота Амура</h3>
+										<span class="card__props">Холст, масло (50&#215;80) </span>
+										<div class="product__price">14 500 руб</div>
+										<button class="btn btn--outline">В&#160;корзину</button>
+									</div>
+								</article>
+								<article class="card">
+									<div class="card__picture">
+										<picture>
+											<source srcset="./img/catalog/card/02.webp 1x, ./img/catalog/card/02@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/catalog/card/02.jpg 1x, ./img/catalog/card/02@2x.jpg 2x" type="image/jpeg" />
+											<img src="./img/catalog/card/02.jpg" alt="" />
+										</picture>
+									</div>
+
+									<div class="card__content">
+										<span class="card__author">Анри Селин</span>
+										<h3 class="card__title">Дама с&#160;собачкой</h3>
+										<span class="card__props">Акрил, бумага (50&#215;80)</span>
+										<div class="product__price">16 500 руб</div>
+										<button class="btn btn--outline">В&#160;корзину</button>
+									</div>
+								</article>
+								<article class="card">
+									<div class="card__picture">
+										<picture>
+											<source srcset="./img/catalog/card/03.webp 1x, ./img/catalog/card/03@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/catalog/card/03.jpg 1x, ./img/catalog/card/03@2x.jpg 2x" type="image/jpeg" />
+											<img src="./img/catalog/card/03.jpg" alt="" />
+										</picture>
+									</div>
+
+									<div class="card__content">
+										<span class="card__author">Франсуа Дюпон</span>
+										<h3 class="card__title">Процедура</h3>
+										<span class="card__props">Цветная литография (40&#215;60)</span>
+										<div class="product__price">20 000 руб</div>
+										<button class="btn btn--outline">В&#160;корзину</button>
+									</div>
+								</article>
+								<article class="card">
+									<div class="card__picture">
+										<picture>
+											<source srcset="./img/catalog/card/04.webp 1x, ./img/catalog/card/04@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/catalog/card/04.jpg 1x, ./img/catalog/card/04@2x.jpg 2x" type="image/jpeg" />
+											<img src="./img/catalog/card/04.jpg" alt="" />
+										</picture>
+									</div>
+
+									<div class="card__content">
+										<span class="card__author">Луи Детуш</span>
+										<h3 class="card__title">Роза</h3>
+										<span class="card__props">Бумага, акрил (50&#215;80)</span>
+										<div class="product__price">12 000 руб</div>
+										<button class="btn btn--outline">В&#160;корзину</button>
+									</div>
+								</article>
+								<article class="card">
+									<div class="card__picture">
+										<picture>
+											<source srcset="./img/catalog/card/05.webp 1x, ./img/catalog/card/05@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/catalog/card/05.jpg 1x, ./img/catalog/card/05@2x.jpg 2x" type="image/jpeg" />
+											<img src="./img/catalog/card/05.jpg" alt="" />
+										</picture>
+									</div>
+
+									<div class="card__content">
+										<span class="card__author">Франсуа Дюпон</span>
+										<h3 class="card__title">Процедура</h3>
+										<span class="card__props">Цветная литография (40&#215;60)</span>
+										<div class="product__price">25 500 руб</div>
+										<button class="btn btn--outline">В&#160;корзину</button>
+									</div>
+								</article>
+								<article class="card">
+									<div class="card__picture">
+										<picture>
+											<source srcset="./img/catalog/card/06.webp 1x, ./img/catalog/card/06@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/catalog/card/06.jpg 1x, ./img/catalog/card/06@2x.jpg 2x" type="image/jpeg" />
+											<img src="./img/catalog/card/06.jpg" alt="" />
+										</picture>
+									</div>
+
+									<div class="card__content">
+										<span class="card__author">Пьер Моранж</span>
+										<h3 class="card__title">Пейзаж с&#160;рыбой</h3>
+										<span class="card__props">Цветная литография (40&#215;60)</span>
+										<div class="product__price">20 000 руб</div>
+										<button class="btn btn--outline">В&#160;корзину</button>
+									</div>
+								</article>
+							</div>
+
+							<div class="cards" id="1">
+								<article class="card">
+									<div class="card__picture">
+										<picture>
+											<source srcset="./img/catalog/card/07.webp 1x, ./img/catalog/card/07@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/catalog/card/07.jpg 1x, ./img/catalog/card/07@2x.jpg 2x" type="image/jpeg" />
+											<img src="./img/catalog/card/07.jpg" alt="" />
+										</picture>
+									</div>
+
+									<div class="card__content">
+										<span class="card__author">Курт Вернер</span>
+										<h3 class="card__title">Над городом</h3>
+										<span class="card__props">Цветная литография (40&#215;60)</span>
+										<div class="product__price">16 000 руб</div>
+										<button class="btn btn--outline">В&#160;корзину</button>
+									</div>
+								</article>
+								<article class="card">
+									<div class="card__picture">
+										<picture>
+											<source srcset="./img/catalog/card/08.webp 1x, ./img/catalog/card/08@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/catalog/card/08.jpg 1x, ./img/catalog/card/08@2x.jpg 2x" type="image/jpeg" />
+											<img src="./img/catalog/card/08.jpg" alt="" />
+										</picture>
+									</div>
+
+									<div class="card__content">
+										<span class="card__author">Макс Рихтер</span>
+										<h3 class="card__title">Птенцы</h3>
+										<span class="card__props">Холст, масло (50&#215;80)</span>
+										<div class="product__price">14 500 руб</div>
+										<button class="btn btn--outline">В&#160;корзину</button>
+									</div>
+								</article>
+								<article class="card">
+									<div class="card__picture">
+										<picture>
+											<source srcset="./img/catalog/card/09.webp 1x, ./img/catalog/card/09@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/catalog/card/09.jpg 1x, ./img/catalog/card/09@2x.jpg 2x" type="image/jpeg" />
+											<img src="./img/catalog/card/09.jpg" alt="" />
+										</picture>
+									</div>
+
+									<div class="card__content">
+										<span class="card__author">Мартин Майер</span>
+										<h3 class="card__title">Среди листьев</h3>
+										<span class="card__props">Цветная литография (40&#215;60)</span>
+										<div class="product__price">20 000 руб</div>
+										<button class="btn btn--outline">В&#160;корзину</button>
+									</div>
+								</article>
+
+								<article class="card">
+									<div class="card__picture">
+										<picture>
+											<source srcset="./img/catalog/card/10.webp 1x, ./img/catalog/card/10@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/catalog/card/10.jpg 1x, ./img/catalog/card/10@2x.jpg 2x" type="image/jpeg" />
+											<img src="./img/catalog/card/10.jpg" alt="" />
+										</picture>
+									</div>
+
+									<div class="card__content">
+										<span class="card__author">Герман Беккер</span>
+										<h3 class="card__title">Яркая птица</h3>
+										<span class="card__props">Цветная литография (40&#215;60) </span>
+										<div class="product__price">13 000 руб</div>
+										<button class="btn btn--outline">В&#160;корзину</button>
+									</div>
+								</article>
+								<article class="card">
+									<div class="card__picture">
+										<picture>
+											<source srcset="./img/catalog/card/11.webp 1x, ./img/catalog/card/11@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/catalog/card/11.jpg 1x, ./img/catalog/card/11@2x.jpg 2x" type="image/jpeg" />
+											<img src="./img/catalog/card/11.jpg" alt="" />
+										</picture>
+									</div>
+
+									<div class="card__content">
+										<span class="card__author">Вульф Бауэр</span>
+										<h3 class="card__title">Дятлы</h3>
+										<span class="card__props">Бумага, акрил (50&#215;80) </span>
+										<div class="product__price">20 500 руб</div>
+										<button class="btn btn--outline">В&#160;корзину</button>
+									</div>
+								</article>
+								<article class="card">
+									<div class="card__picture">
+										<picture>
+											<source srcset="./img/catalog/card/12.webp 1x, ./img/catalog/card/12@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/catalog/card/12.jpg 1x, ./img/catalog/card/12@2x.jpg 2x" type="image/jpeg" />
+											<img src="./img/catalog/card/12.jpg" alt="" />
+										</picture>
+									</div>
+
+									<div class="card__content">
+										<span class="card__author">Вальтер Хартманн</span>
+										<h3 class="card__title">Большие воды</h3>
+										<span class="card__props">Бумага, акрил (50&#215;80)</span>
+										<div class="product__price">20 000 руб</div>
+										<button class="btn btn--outline">В&#160;корзину</button>
+									</div>
+								</article>
+							</div>
+							<div class="cards" id="2">
+								<article class="card">
+									<div class="card__picture">
+										<picture>
+											<source srcset="./img/catalog/card/13.webp 1x, ./img/catalog/card/13@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/catalog/card/13.jpg 1x, ./img/catalog/card/13@2x.jpg 2x" type="image/jpeg" />
+											<img src="./img/catalog/card/13.jpg" alt="" />
+										</picture>
+									</div>
+
+									<div class="card__content">
+										<span class="card__author">Пол Смит</span>
+										<h3 class="card__title">Дикий зверь</h3>
+										<span class="card__props">Акварель, бумага (50&#215;80) </span>
+										<div class="product__price">1 500 руб</div>
+										<button class="btn btn--outline">В&#160;корзину</button>
+									</div>
+								</article>
+								<article class="card">
+									<div class="card__picture">
+										<picture>
+											<source srcset="./img/catalog/card/14.webp 1x, ./img/catalog/card/14@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/catalog/card/14.jpg 1x, ./img/catalog/card/14@2x.jpg 2x" type="image/jpeg" />
+											<img src="./img/catalog/card/14.jpg" alt="" />
+										</picture>
+									</div>
+
+									<div class="card__content">
+										<span class="card__author">Джон Уайт</span>
+										<h3 class="card__title">Скалистый берег</h3>
+										<span class="card__props">Цветная литография (40&#215;60) </span>
+										<div class="product__price">17 500 руб</div>
+										<button class="btn btn--outline">В&#160;корзину</button>
+									</div>
+								</article>
+								<article class="card">
+									<div class="card__picture">
+										<picture>
+											<source srcset="./img/catalog/card/15.webp 1x, ./img/catalog/card/15@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/catalog/card/15.jpg 1x, ./img/catalog/card/15@2x.jpg 2x" type="image/jpeg" />
+											<img src="./img/catalog/card/15.jpg" alt="" />
+										</picture>
+									</div>
+
+									<div class="card__content">
+										<span class="card__author">Джим Уотсон</span>
+										<h3 class="card__title">Река и&#160;горы</h3>
+										<span class="card__props">Акварель, бумага (50&#215;80) </span>
+										<div class="product__price">20 000 руб</div>
+										<button class="btn btn--outline">В&#160;корзину</button>
+									</div>
+								</article>
+
+								<article class="card">
+									<div class="card__picture">
+										<picture>
+											<source srcset="./img/catalog/card/16.webp 1x, ./img/catalog/card/16@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/catalog/card/16.jpg 1x, ./img/catalog/card/16@2x.jpg 2x" type="image/jpeg" />
+											<img src="./img/catalog/card/16.jpg" alt="" />
+										</picture>
+									</div>
+
+									<div class="card__content">
+										<span class="card__author">Юджин Зиллион</span>
+										<h3 class="card__title">Белый попугай</h3>
+										<span class="card__props">Цветная литография (40&#215;60) </span>
+										<div class="product__price">15 000 руб</div>
+										<button class="btn btn--outline">В&#160;корзину</button>
+									</div>
+								</article>
+								<article class="card">
+									<div class="card__picture">
+										<picture>
+											<source srcset="./img/catalog/card/17.webp 1x, ./img/catalog/card/17@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/catalog/card/17.jpg 1x, ./img/catalog/card/17@2x.jpg 2x" type="image/jpeg" />
+											<img src="./img/catalog/card/17.jpg" alt="" />
+										</picture>
+									</div>
+
+									<div class="card__content">
+										<span class="card__author">Эрик Гиллман</span>
+										<h3 class="card__title">Ночная рыба</h3>
+										<span class="card__props">Бумага, акрил (50&#215;80) </span>
+										<div class="product__price">12 500 руб</div>
+										<button class="btn btn--outline">В&#160;корзину</button>
+									</div>
+								</article>
+								<article class="card">
+									<div class="card__picture">
+										<picture>
+											<source srcset="./img/catalog/card/18.webp 1x, ./img/catalog/card/18@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/catalog/card/18.jpg 1x, ./img/catalog/card/18@2x.jpg 2x" type="image/jpeg" />
+											<img src="./img/catalog/card/18.jpg" alt="" />
+										</picture>
+									</div>
+
+									<div class="card__content">
+										<span class="card__author">Альфред Барр</span>
+										<h3 class="card__title">Рыжий кот</h3>
+										<span class="card__props">Цветная литография (40&#215;60)</span>
+										<div class="product__price">20 000 руб</div>
+										<button class="btn btn--outline">В&#160;корзину</button>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="newbies">
+				<div class="container">
+					<div class="newbies__wrapper">
+						<h2 class="newbies__title">Новая коллекция французских авторов</h2>
+						<div class="newbies__text">
+							<p>
+								Сложно сказать, почему акционеры крупнейших компаний призывают нас к новым свершениям, которые, в&#160;свою очередь, должны быть заблокированы в
+								рамках своих собственных рациональных ограничений.
+							</p>
+							<p>
+								Принимая во&#160;внимание показатели успешности, граница обучения кадров предопределяет высокую востребованность направлений прогрессивного развития.
+							</p>
+						</div>
+						<a href="" class="newbies__bts">Ознакомиться</a>
+					</div>
+				</div>
+			</section>
+			<section class="about">
+				<div class="container">
+					<div class="about__row">
+						<div class="about__img">
+							<picture>
+								<source srcset="./img/about/about-img.webp 1x, ./img/about/about-img@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/about/about-img.png 1x, ./img/about/about-img@2x.png 2x" type="image/png" />
+								<img src="./img/about/about-img.png" alt="" />
+							</picture>
+						</div>
+						<div class="about__content">
+							<h2 class="title about__title">Наша команда</h2>
+							<div class="about__text">
+								<p>
+									Значимость этих проблем настолько очевидна, что базовый вектор развития позволяет оценить значение экспериментов, поражающих по своей масштабности
+									и&#160;грандиозности. Мы&#160;вынуждены отталкиваться от того, что консультация с&#160;широким активом.
+								</p>
+							</div>
+							<div class="about__item">
+								<picture>
+									<source srcset="./img/about/avatar-1.webp 1x, ./img/about/avatar-1@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/about/avatar-1.jpg 1x, ./img/about/avatar-1@2x.jpg 2x" type="image/jpeg" />
+									<img src="./img/about/avatar-1.jpg" alt="Avatar" />
+								</picture>
+								<picture>
+									<source srcset="./img/about/avatar-2.webp 1x, ./img/about/avatar-2@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/about/avatar-2.jpg 1x, ./img/about/avatar-2@2x.jpg 2x" type="image/jpeg" />
+									<img src="./img/about/avatar-2.jpg" alt="Avatar" />
+								</picture>
+								<picture>
+									<source srcset="./img/about/avatar-3.webp 1x, ./img/about/avatar-3@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/about/avatar-3.jpg 1x, ./img/about/avatar-3@2x.jpg 2x" type="image/jpeg" />
+									<img src="./img/about/avatar-3.jpg" alt="Avatar" />
+								</picture>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__row">
+					<div class="footer__logo">
+						<img src="./img/footer/footer-logo.svg" alt="" />
+					</div>
+
+					<div class="footer__nav-wrapper">
+						<div class="footer__contacts">
+							<a href="tel:+79995435454">+7&#160;999&#160;543-54-54</a>
+							<p class="footer__descr">Мастерская</p>
+						</div>
+
+						<div class="footer__nav">
+							<h3 class="footer__nav-title">Репродукции</h3>
+							<ul class="footer__nav-list">
+								<li class="footer__nav-item">
+									<a href="#!" class="footer__nav-link">Франция</a>
+								</li>
+								<li class="footer__nav-item">
+									<a href="#!" class="footer__nav-link">Германи</a>
+								</li>
+								<li class="footer__nav-item">
+									<a href="#!" class="footer__nav-link">Англия</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__nav">
+							<h3 class="footer__nav-title">Новинки</h3>
+							<ul class="footer__nav-list">
+								<li class="footer__nav-item">
+									<a href="#!" class="footer__nav-link">2023</a>
+								</li>
+								<li class="footer__nav-item">
+									<a href="#!" class="footer__nav-link">2024</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__nav">
+							<h3 class="footer__nav-title">О&#160;нас</h3>
+							<ul class="footer__nav-list">
+								<li class="footer__nav-item">
+									<a href="#!" class="footer__nav-link">Художники</a>
+								</li>
+								<li class="footer__nav-item">
+									<a href="#!" class="footer__nav-link">Менеджеры</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="footer__socials">
+						<a href="#!">
+							<svg class="icon icon--facebook">
+								<use href="./img/svgsprite/sprite.symbol.svg#facebook"></use>
+							</svg>
+						</a>
+						<a href="#!">
+							<svg class="icon icon--instagram">
+								<use href="./img/svgsprite/sprite.symbol.svg#instagram"></use>
+							</svg>
+						</a>
+						<a href="#!">
+							<svg class="icon icon--youtube">
+								<use href="./img/svgsprite/sprite.symbol.svg#youtube"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="./js/index.bundle.js"></script>
+	</body>
+</html>
