@@ -1,0 +1,29 @@
+.header__nav {
+ @include mobile {
+      display: none;
+  }
+}
+.nav__list {
+	display: flex;
+	column-gap: 60px; 
+}
+.nav__item {
+  transition: all 0.2s ease-in;
+}
+.nav__item a:hover {
+  color: var(--accent);
+}
+.footer__nav-item a:hover {
+  color: var(--accent);
+}
+.footer__nav-title {
+  font-size: 20px;
+  color: var(--text-color);
+  margin-bottom: 6px;
+  @include mobile {
+      font-size: 16px;
+  }
+}
+.footer__nav-item:not(:last-child) {
+  margin-bottom: 6px;
+}

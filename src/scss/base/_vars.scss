@@ -1,0 +1,23 @@
+:root {
+	--container-width: 1140px;
+	--container-padding: 15px;
+
+	--font-main: "Raleway", sans-serif;
+	
+	--page-bg: #f4f6f5;
+  --bg-color:#e1ede6;
+  --accent: #598D66;
+	--text-color: #2c2d35;
+  --text-accent: #86928b;
+	--btn-bg: #376b44;
+	
+
+  --laptop-size: 1199px;
+	--tablet-size: 959px;
+	--mobile-size: 599px;
+}
+
+.dark {
+    --page-bg: #252526;
+    --text-color: #fff;
+}

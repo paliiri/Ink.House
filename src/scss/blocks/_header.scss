@@ -1,0 +1,55 @@
+.header {
+	background-color: var(--bg-color);
+	padding: 33px 0;
+
+  @include tablet-666 {
+    padding: 16px 0;
+  }
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+    @include tablet-666 {
+      flex-direction: column;
+      align-items: normal;
+    }
+    @include mobile {
+      height: 130px;
+      justify-content: flex-end;
+    }
+	}
+}
+
+.logo {
+  @include tablet-666 {
+    border-bottom: 1px solid #c3d1c6;
+    display: flex;
+    width: -webkit-fill-available;
+    justify-content: center;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+  }
+  @include mobile {
+      border-bottom: none;
+      position: absolute;
+      background-color: var(--page-bg);
+      width: 100%;
+      top: 0;
+      right: 0;
+      padding-top: 16px;
+      z-index: 100;
+  }
+}
+.header__right {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  
+  @include tablet-666 {
+      justify-content: space-between;
+  } 
+}
+
+

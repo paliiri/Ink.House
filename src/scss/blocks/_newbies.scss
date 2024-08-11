@@ -1,0 +1,126 @@
+.newbies {
+  background-image: url(../img/newbies/newbies-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 574px;
+
+  position: relative;
+  overflow: hidden;
+
+
+   @include tablet {
+    background-image: url(../img/newbies/table-newbies.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 574px;
+  }
+  @include mobile {
+    background-position: 60%;
+  }
+}
+.newbies::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  filter: blur(315px);
+  background: rgba(13, 43, 67, 1.8);
+  mix-blend-mode: multiply;
+
+  @include tablet {
+      width: 100%;
+      filter: blur(160px);
+  }
+}
+.newbies::before {
+  position: absolute;
+  content: "";
+  background-image: url(../../img/newbies/rectangle.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+  mix-blend-mode: hue;
+  opacity: 0.7;
+  height: 100%;
+
+  width: 60%;
+  left: 0;
+  right: 0;
+
+}
+.newbies__wrapper {
+  color: #fff;
+  max-width: 540px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 99;
+
+  @include tablet {
+      max-width: 690px;
+  }
+}
+.newbies__title {
+  font-size: 40px;
+  line-height: 100%;
+  color: #f4f6f5;
+  padding-left: 100px;
+  margin-bottom: 20px;
+
+  position: relative;
+
+  @include tablet-666 {
+    font-size: 24px;
+    max-width: 530px;
+    padding-left: 80px;
+  }
+}
+.newbies__title::before {
+  position: absolute;
+  content: "";
+  z-index: 9;
+  bottom: 0;
+  left: 0;
+  background-image: url(../../img/newbies/star.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 80px;
+  height: 80px; 
+
+  @include tablet-666 {
+    background-image: url(../../img/newbies/star-666.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px; 
+  }
+}
+.newbies__text {
+  margin-bottom: 30px;
+
+  @include tablet-666 {
+    margin-bottom: 20px;
+  }
+}
+.newbies__text p:not(:last-child){
+  margin-bottom: 30px;
+
+  @include tablet-666 {
+    margin-bottom: 20px;
+  }
+}
+.newbies__bts {
+  display: inline-block;
+  padding: 20px 60px;
+  background: #eedb6d;
+  font-weight: 500;
+  font-size: 20px;
+  color: #2c2d35;
+}
+.newbies__bts:hover {
+  background: #faeb97;
+}

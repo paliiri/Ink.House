@@ -1,0 +1,27 @@
+.btn {
+  display: inline-block;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 20px 60px;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    background-color: var(--accent);
+    color: #f4f6f5;
+  }
+
+  @include tablet {
+     padding: 18px 30px;
+  }
+  @include mobile {
+    padding: 14px 28px;
+    font-size: 18px;   
+  }
+}
+.btn--outline {
+  width: 100%;  
+}
+
