@@ -1,5 +1,6 @@
 .newbies {
   background-image: url(../img/newbies/newbies-bg.png);
+    // background-image: linear-gradient(to right, rgb(0 0 0 / 60%), rgb(0 0 0 / 33%), transparent),  url(../img/newbies/newbies-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -45,8 +46,11 @@
  
   mix-blend-mode: hue;
   opacity: 0.7;
-  height: 100%;
 
+  // mix-blend-mode: saturation;
+  // opacity: 1;
+  
+  height: 100%;
   width: 60%;
   left: 0;
   right: 0;
